@@ -34,7 +34,7 @@ jobs:
           export SUBARCH=arm64
           
           # GANTI 'sapphiren_defconfig' SESUAI NAMA DEFCONFIG DI REPO KAMU
-          DEFCONFIG="sapphiren_defconfig"
+          DEFCONFIG="generic_bengal_defconfig"
           
           make O=out ARCH=arm64 CC=clang LLVM=1 LLVM_IAS=1 $DEFCONFIG
           make -j$(nproc --all) O=out ARCH=arm64 CC=clang LLVM=1 LLVM_IAS=1 \
